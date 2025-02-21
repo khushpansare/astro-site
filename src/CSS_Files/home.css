@@ -1,0 +1,310 @@
+.home-content {
+  .sec-1 {
+    .video-slider-container {
+      width: 100%;
+      /* height: 100vh; */
+      overflow: hidden;
+    }
+
+    .video-slide {
+      width: 100%;
+      /* height: 100vh; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slider-video {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  .sec-2 {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f1ed;
+
+    .card-container::-webkit-scrollbar {
+      width: 2px; /* Width of the vertical scrollbar */
+      height: 8px; /* Height of the horizontal scrollbar */
+    }
+
+    .card-container::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Background of the scrollbar track */
+      border-radius: 10px;
+    }
+
+    .card-container::-webkit-scrollbar-thumb {
+      background: #888; /* Color of the scrollbar thumb */
+      border-radius: 10px;
+    }
+
+    .card-container::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Color of the scrollbar thumb on hover */
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      overflow-x: scroll;
+      padding: 10px 20px;
+
+      .card {
+        flex: 1 1 calc(20%);
+        margin: 5px 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(51, 51, 51, 0.21);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /* border: 1px solid #000; */
+
+        h4 {
+          background: green;
+          padding: 10px 0;
+          color: #fff;
+          margin: 0 !important;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          letter-spacing: 1px;
+        }
+
+        .product-duo {
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+          /* flex-wrap: wrap; */
+
+          .single-product {
+            margin: 5px 10px;
+            cursor: pointer;
+
+            img {
+              width: 80px;
+            }
+
+            p {
+              font-size: 15px !important;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sec-3 {
+    text-align: center;
+    padding: 30px 0;
+    margin: 30px 0;
+
+    h1 {
+      color: #032b71;
+      margin-bottom: 20px !important;
+    }
+
+    .card {
+      border-radius: 7px;
+      margin-top: 25px;
+      width: 220px !important;
+      /* padding: 5px; */
+      /* height: 300px; */
+      margin: 5px 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+      }
+    }
+
+    .card-even {
+      margin-top: 45px;
+    }
+
+    .card-content {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+  }
+
+  .sec-4 {
+    background-image: url(../Assets/home/sec-4/bg-down-grass.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    margin-top: 15px;
+    padding: 80px 0px 100px;
+
+    .main-card {
+      background: #245550;
+      border-radius: 8px;
+      padding: 50px;
+      text-align: center;
+      color: #fff;
+      margin: 0 100px;
+      width: auto;
+
+      .card-container {
+        /* display: flex;
+        justify-content: center; */
+
+        .single-card {
+          background: #c6dddb;
+          border-radius: 8px;
+          margin-bottom: 50px;
+          padding: 25px;
+          width: auto !important;
+          /* height: 240px; */
+          margin: 15px 10px;
+          color: #06312c;
+          font-size: 20px;
+          text-align: left;
+
+          .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+              display: flex;
+              align-items: center;
+
+              p {
+                margin: 0 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots li button:before {
+        color: #fff;
+      }
+    }
+  }
+
+  .wrap-content {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    height: auto;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 550px) {
+  .home-content {
+    .sec-2 {
+      .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+
+        .card {
+          width: 100%;
+
+          .product-duo {
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .home-content {
+    .sec-4 {
+      padding: 80px 50px 50px;
+      .main-card {
+        margin: 70px 70px 90px;
+        padding: 35px;
+
+        .single-card {
+          padding: 15px;
+          margin: 15px 10px;
+        }
+      }
+    }
+
+    .wrap-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+      padding: 15px;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .home-content {
+    .sec-3 {
+      .card-even {
+        margin-top: 0;
+      }
+    }
+
+    .sec-4 {
+      padding: 35px;
+
+      .main-card {
+        margin: 20px 20px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home-content {
+    .sec-2 {
+      padding: 50px 0;
+
+      .card-container {
+        .card {
+          .product-duo {
+            overflow-x: scroll;
+          }
+        }
+      }
+    }
+
+    .sec-4 {
+      padding: 5px;
+
+      .main-card {
+        margin: 20px 10px;
+        padding: 10px;
+        .single-card {
+          padding: 5px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

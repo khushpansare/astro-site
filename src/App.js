@@ -16,7 +16,7 @@ import Astrological_Survey_Form from "./Common/Astrological_Survey_Form";
 function App() {
   return (
     <BrowserRouter>
-      <Routes basename={"/astro-site"}>
+      <Routes basename={"/Nutrihub"}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/course" element={<Course />} />

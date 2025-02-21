@@ -1,0 +1,52 @@
+.contact-content {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+
+  .sec-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .card {
+      width: 40%;
+      border: 1px solid #eee;
+      padding: 10px;
+      margin: 0 15px;
+
+      .single {
+        display: flex;
+        margin: 10px;
+
+        .icon {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .sec-2 {
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .contact-content {
+    .sec-1 {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-content {
+    padding: 10px;
+  }
+}

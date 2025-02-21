@@ -1,0 +1,248 @@
+body {
+  font-family: Gilroy;
+}
+
+video,
+iframe.source {
+  margin: 0 !important;
+}
+
+.container {
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  margin: 10px !important;
+}
+
+p {
+  font-size: 18px !important;
+}
+
+.map-content {
+  margin: 0 15px;
+  width: 100%;
+  height: auto;
+}
+
+.contact-form-content {
+  width: 100%;
+  background-color: #f5f6f6;
+
+  .contact-form {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .form-row input {
+    flex: 1;
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    height: 25px;
+  }
+
+  textarea {
+    width: 100%;
+    resize: vertical;
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 50px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #245550;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  button:hover {
+    background-color: #008000;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .map-content {
+    width: 100%;
+    margin: 10px 5px;
+  }
+
+  .contact-form-content {
+    width: 100%;
+    margin: 10px 5px;
+  }
+}
+
+.video-content {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+
+  h1 {
+    color: #fff;
+    margin-bottom: 25px;
+
+    mark {
+      background: none;
+      color: #19deca;
+    }
+  }
+
+  .video-container {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* flex-wrap: wrap; */
+
+    .single-video {
+      /* margin: 15px 25px; */
+
+      iframe {
+        width: 400px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+.dialog-content {
+  .img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 15px 25px;
+    padding: 25px;
+    border: 1px solid #dee2e6;
+
+    img {
+      /* width: 100%; */
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #245550;
+    padding: 9px 35px;
+    border-radius: 5px;
+    /* margin-top: 15px !important; */
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #245550b7; /* Thumb color */
+  border-radius: 10px;
+  border: 2px solid #f5f5f5; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8c82ff; /* Thumb color on hover */
+}
+
+.relatable-product {
+  display: flex;
+  margin: 30px 10px;
+  overflow-x: scroll;
+  margin: 10px 25px;
+
+  .single-product {
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.297);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 5px;
+
+    .img {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        /* width: 100%; */
+        width: 100%;
+        height: auto;
+        /* max-width: 100%; */
+      }
+    }
+
+    h3 {
+      letter-spacing: 1px;
+    }
+
+    a {
+      /* margin-top: 7px !important; */
+      text-decoration: none;
+      color: #fff;
+      background-color: #245550;
+      padding: 9px 35px;
+      border-radius: 5px;
+      margin: 0 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .video-content {
+    .video-container {
+      .single-video {
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
