@@ -146,7 +146,9 @@ function Astrological_Survey_Form() {
                   </button> */}
                 </div>
               </div>
+            </div>
 
+            <div className="form-row">
               <div className="single-input">
                 <div
                   class="upload-container"

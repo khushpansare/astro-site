@@ -12,7 +12,10 @@
   padding: 75px 0;
 
   form {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .single-input {
       margin: 25px 15px;
@@ -21,6 +24,8 @@
     .form-row {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
 
       .upload-container {
         text-align: center;
