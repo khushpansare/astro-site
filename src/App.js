@@ -1,7 +1,7 @@
 import React from "react";
 
 // React-Router
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 
 // Components
 import Home from "./Components/Home";
@@ -16,19 +16,21 @@ import Astrological_Survey_Form from "./Common/Astrological_Survey_Form";
 function App() {
   return (
     <BrowserRouter>
-      <Routes basename={"/astro-site"}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/course" element={<Course />} />
-        <Route path="/Services" element={<Service />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route
-          path="/astrological-session"
-          element={<Astrological_Survey_Form />}
-        />
-      </Routes>
+      <Router basename={"/astro-site"}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/Services" element={<Service />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route
+            path="/astrological-session"
+            element={<Astrological_Survey_Form />}
+          />
+        </Routes>
+      </Router>
     </BrowserRouter>
   );
 }
