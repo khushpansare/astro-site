@@ -1,12 +1,7 @@
 import React from "react";
 
 // React-Router
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Router,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import Home from "./Components/Home";
