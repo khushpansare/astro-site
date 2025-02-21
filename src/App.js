@@ -1,7 +1,12 @@
 import React from "react";
 
 // React-Router
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Router,
+} from "react-router-dom";
 
 // Components
 import Home from "./Components/Home";
@@ -15,7 +20,7 @@ import Astrological_Survey_Form from "./Common/Astrological_Survey_Form";
 
 function App() {
   return (
-    <BrowserRouter basename={"/astro-site"}>
+    <Router basename={"/astro-site"}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -29,7 +34,7 @@ function App() {
           element={<Astrological_Survey_Form />}
         />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
