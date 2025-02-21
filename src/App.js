@@ -15,22 +15,20 @@ import Astrological_Survey_Form from "./Common/Astrological_Survey_Form";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Router basename={"/astro-site"}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/course" element={<Course />} />
-          <Route path="/Services" element={<Service />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact-us" element={<Contact />} />
-          <Route
-            path="/astrological-session"
-            element={<Astrological_Survey_Form />}
-          />
-        </Routes>
-      </Router>
+    <BrowserRouter basename={"/astro-site"}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/course" element={<Course />} />
+        <Route path="/Services" element={<Service />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route
+          path="/astrological-session"
+          element={<Astrological_Survey_Form />}
+        />
+      </Routes>
     </BrowserRouter>
   );
 }
