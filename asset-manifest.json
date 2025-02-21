@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15caf298.css",
+    "main.js": "/static/js/main.bddd38aa.js",
+    "static/js/453.97bfbbaa.chunk.js": "/static/js/453.97bfbbaa.chunk.js",
+    "static/media/nata-charts-readings.png": "/static/media/nata-charts-readings.b1d48ad4f4e99a6d102b.png",
+    "static/media/progression-reading.jpeg": "/static/media/progression-reading.4809cb86ad9ab5378cdf.jpeg",
+    "static/media/astrology-circle-orance.png": "/static/media/astrology-circle-orance.60105a7b8e8fc728de71.png",
+    "static/media/horoscope-matching.png": "/static/media/horoscope-matching.f12a1a983c5c44898325.png",
+    "static/media/nav-bg.png": "/static/media/nav-bg.8167ba7c75ec854f6766.png",
+    "static/media/contact-bg.png": "/static/media/contact-bg.d6c88a6cbe6497a4fa5c.png",
+    "static/media/home-sec-1-bg.jpg": "/static/media/home-sec-1-bg.13854ce61cd054f7e9e1.jpg",
+    "static/media/comptability-reading.jpeg": "/static/media/comptability-reading.40a5c3ee2f41f5ea8d84.jpeg",
+    "static/media/contact-bg-1.jpg": "/static/media/contact-bg-1.e392d368339a06e172fa.jpg",
+    "static/media/session-bg.jpg": "/static/media/session-bg.02efba71f88a37ac9819.jpg",
+    "static/media/bg-dark.png": "/static/media/bg-dark.1022583f55f272583ba2.png",
+    "static/media/astro-logo.jpg": "/static/media/astro-logo.5b9c32f1ad6374309d36.jpg",
+    "index.html": "/index.html",
+    "main.15caf298.css.map": "/static/css/main.15caf298.css.map",
+    "main.bddd38aa.js.map": "/static/js/main.bddd38aa.js.map",
+    "453.97bfbbaa.chunk.js.map": "/static/js/453.97bfbbaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15caf298.css",
+    "static/js/main.bddd38aa.js"
+  ]
+}
