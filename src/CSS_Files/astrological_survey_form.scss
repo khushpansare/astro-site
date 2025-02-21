@@ -1,0 +1,129 @@
+.astrology-session {
+  //   height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("../Assets/session-bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  //   background-color: $dark-theme-color;
+  padding: 75px 0;
+
+  form {
+    // display: flex;
+
+    .single-input {
+      margin: 25px 15px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .upload-container {
+        text-align: center;
+        // padding: 20px;
+        border: 2px dashed #ffffff55;
+        border-radius: 10px;
+        background-color: #1e1e1e;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      label {
+        cursor: pointer;
+        padding: 20px;
+      }
+
+      .upload-text {
+        color: $bright-yellow;
+        font-weight: bold;
+      }
+
+      .upload-container:hover {
+        background-color: #2a2a2a;
+      }
+
+      .upload-container input[type="file"] {
+        display: none;
+        cursor: pointer;
+        opacity: 0;
+        border: 2px solid $bright-yellow;
+      }
+
+      .upload-container p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #ccc;
+      }
+
+      .preview-image {
+        margin-top: 20px;
+        max-width: 500px;
+        // max-height: 200px;
+        // border-radius: 10px;
+        border-top: 2px dashed $bright-yellow;
+        // display: none;
+      }
+
+      .file-name {
+        color: #aaa;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      label {
+        color: $text-color;
+        flex: 1;
+        margin: 8px 15px;
+      }
+
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1); /* Makes the icon white */
+        cursor: pointer;
+      }
+
+      input[type="time"]::-webkit-calendar-picker-indicator {
+        filter: invert(1); /* Makes the icon white */
+        cursor: pointer;
+      }
+
+      /* Change the dropdown calendar background color */
+      ::-webkit-datetime-edit {
+        color: white; /* Change text color */
+      }
+
+      /* Hide the default background */
+      ::-webkit-datetime-edit-fields-wrapper {
+        background: transparent;
+      }
+
+      /* Change the dropdown's text color */
+      ::-webkit-datetime-edit-text {
+        color: white;
+      }
+
+      input {
+        flex: 1;
+        outline: none;
+        padding: 10px 20px;
+        height: 25px;
+        margin: 12px 15px;
+        color: $text-color;
+        width: 300px;
+        font-size: 15px;
+        transition: 0.2s ease-out;
+
+        &:focus {
+          border: 2px solid $bright-yellow;
+        }
+      }
+    }
+  }
+}

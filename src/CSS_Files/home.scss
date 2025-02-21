@@ -1,0 +1,321 @@
+.home-sec-1 {
+  //   height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Assets/home-sec-1-bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  color: $text-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 75px 0;
+
+  .left {
+    width: 50%;
+    h1 {
+      max-width: 10ch; /* 1ch = width of "0", so 30ch ≈ 6-7 words */
+      font-size: 4rem;
+      color: $bright-yellow;
+    }
+
+    p {
+      margin-top: 2rem;
+      max-width: 60ch; /* 1ch = width of "0", so 30ch ≈ 6-7 words */
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 2rem;
+      font-size: 15px;
+      font-weight: bold;
+      background: transparent;
+      color: $bright-yellow;
+      border: 2px solid $bright-yellow;
+      border-radius: 10px;
+      padding: 10px 20px;
+
+      &:hover {
+        cursor: pointer;
+        color: $text-color;
+        border: 2px solid $text-color;
+        transition: 0.25s ease-in-out;
+      }
+    }
+  }
+
+  .right {
+    width: 30%;
+    text-align: center;
+    img {
+      width: 100%;
+      border-radius: 50%;
+      //   border: 2px solid $bright-yellow;
+      animation: rotate 40s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+// MediaQuery
+@media only screen and (max-width: 1024px) {
+  .home-sec-1 {
+    padding: 50px;
+    .right {
+      margin-top: 25px;
+      width: auto;
+    }
+
+    .left {
+      width: auto;
+      // max-width: min-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-sec-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-sec-1 {
+    .left {
+      h1 {
+        max-width: 10ch; /* 1ch = width of "0", so 30ch ≈ 6-7 words */
+        font-size: 2.5rem;
+        color: $bright-yellow;
+      }
+    }
+  }
+}
+
+.home-sec-services {
+  background: linear-gradient(rgba(2, 0, 19, 0.9), rgba(2, 0, 19, 0.9)),
+    url("../Assets/bg-dark.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 75px 0;
+  text-align: center;
+
+  .headings {
+    text-align: center;
+
+    h1 {
+      color: $bright-yellow;
+      font-size: 2.5rem;
+      //   max-width: 25cm;
+    }
+
+    h2 {
+      color: $text-color;
+      //   font-size: 2rem;
+    }
+  }
+
+  .services-card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .single-card {
+      margin: 15px 0;
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      background: linear-gradient(
+        to right,
+        rgba(140, 135, 135, 0.3),
+        rgba(126, 108, 108, 0.1)
+      );
+      backdrop-filter: blur(15px) saturate(150%);
+      -webkit-backdrop-filter: blur(15px) saturate(150%);
+      // border: 2px solid $bright-yellow;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        margin-left: 7%;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 7%;
+      }
+
+      .left {
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2 {
+          color: $bright-yellow;
+          margin: 0 0 30px 0;
+
+          mark {
+            background: none;
+            color: $text-color;
+          }
+        }
+
+        p {
+          color: $text-color;
+          max-width: 25ch;
+        }
+
+        a {
+          margin-top: 25px;
+          border: 2px solid $text-color;
+          color: $bright-yellow;
+          cursor: pointer;
+          transition: 0.3s ease-in;
+          padding: 8px 15px;
+
+          &:hover {
+            background-color: $bright-yellow;
+            color: #000;
+          }
+        }
+      }
+
+      .right {
+        margin: 0 15px;
+
+        img {
+          width: 450px;
+          height: 220px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+
+  .show-more {
+    margin-top: 25px;
+    font-size: 16px;
+    // color: $text-color;
+    transition: 0.3s ease-in;
+    border: 2px solid $text-color;
+    background-color: $bright-yellow;
+
+    &:hover {
+      background-color: $text-color;
+      // color: $bright-yellow;
+      border: 2px solid $bright-yellow;
+    }
+  }
+}
+
+// MediaQuery
+@media only screen and (max-width: 1124px) {
+  .home-sec-services {
+    .services-card {
+      justify-content: center;
+      align-items: center;
+
+      .single-card {
+        .right {
+          width: 350px;
+          height: 180px;
+          img {
+            width: 100%;
+            height: 100%;
+            // width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  .home-sec-services {
+    .services-card {
+      padding: 0 25px;
+      .single-card {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-sec-services {
+    .services-card {
+      padding: 0 25px;
+      .single-card {
+        // width: 100%;
+
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+
+        .right {
+          width: 300px;
+          height: 160px;
+          img {
+            width: 100%;
+            height: 100%;
+            // width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .home-sec-services {
+    .services-card {
+      padding: 0 5px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .single-card {
+        flex-direction: column;
+        // width: 250px;
+        margin: 15px;
+
+        &:nth-child(even) {
+          flex-direction: column;
+        }
+
+        .right {
+          width: 250px;
+          height: 160px;
+          margin-top: 25px;
+          img {
+            width: 100%;
+            height: 100%;
+            // width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
