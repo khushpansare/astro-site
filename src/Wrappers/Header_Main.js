@@ -36,7 +36,7 @@ function Header_Main() {
           openDrawer={openDrawer}
         />
       </header>
-      <Mobile_Navbar />
+      <Mobile_Navbar handleCloseDrawer={handleCloseDrawer} />
     </>
   );
 }

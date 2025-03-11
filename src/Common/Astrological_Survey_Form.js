@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Layout from "../Main Component/Layout";
 
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+
 function Astrological_Survey_Form() {
   const [faceImg, setFaceImg] = useState("");
   const [rightPalmImg, setRightPalmImg] = useState("");
@@ -47,7 +49,6 @@ function Astrological_Survey_Form() {
                   // value={formData.firstName}
                   // onChange={handleChange}
                   placeholder="First Name"
-                  required
                 />
               </div>
               <div className="single-input">
@@ -59,7 +60,6 @@ function Astrological_Survey_Form() {
                   // value={formData.lastName}
                   // onChange={handleChange}
                   placeholder="Last Name"
-                  required
                 />
               </div>
             </div>
@@ -73,7 +73,6 @@ function Astrological_Survey_Form() {
                   // value={formData.firstName}
                   // onChange={handleChange}
                   placeholder="Time"
-                  required
                 />
               </div>
               <div className="single-input">
@@ -85,7 +84,6 @@ function Astrological_Survey_Form() {
                   // value={formData.lastName}
                   // onChange={handleChange}
                   placeholder="Birth Location"
-                  required
                 />
               </div>
             </div>
@@ -93,10 +91,10 @@ function Astrological_Survey_Form() {
             <div className="form-row">
               <div className="single-input">
                 <div
-                  class="upload-container"
+                  className="upload-container"
                   id="uploadBox"
                   onclick="triggerFileInput()">
-                  <label class="custom-file">
+                  <label className="custom-img-upload-container">
                     <input
                       type="file"
                       accept="image/*"
@@ -117,70 +115,65 @@ function Astrological_Survey_Form() {
 
               <div className="single-input">
                 <div
-                  class="upload-container"
+                  className="upload-container"
                   id="uploadBox"
                   onclick="triggerFileInput()">
-                  <div
-                    class="upload-container"
-                    id="uploadBox"
-                    onclick="triggerFileInput()">
-                    <label class="custom-file">
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={handleRightPalmImg}
-                      />
-                      <h3>Upload Right Palm Image</h3>
-                    </label>
+                  <label className="custom-img-upload-container">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleRightPalmImg}
+                    />
+                    <h3>Upload Right Palm Image</h3>
+                  </label>
 
-                    {rightPalmImg && (
-                      <img
-                        src={rightPalmImg}
-                        alt="Preview"
-                        className="preview-image"
-                      />
-                    )}
-                  </div>
-                  {/* <button class="upload-btn" id="uploadButton">
+                  {rightPalmImg && (
+                    <img
+                      src={rightPalmImg}
+                      alt="Preview"
+                      className="preview-image"
+                    />
+                  )}
+                </div>
+                {/* <button className="upload-btn" id="uploadButton">
                     Upload Image
                   </button> */}
-                </div>
               </div>
             </div>
 
             <div className="form-row">
               <div className="single-input">
                 <div
-                  class="upload-container"
+                  className="upload-container"
                   id="uploadBox"
                   onclick="triggerFileInput()">
-                  <div
-                    class="upload-container"
-                    id="uploadBox"
-                    onclick="triggerFileInput()">
-                    <label class="custom-file">
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={handleLeftPalmImg}
-                      />
-                      <h3>Upload Left Palm Image</h3>
-                    </label>
+                  <label className="custom-img-upload-container">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleLeftPalmImg}
+                    />
+                    <h3>Upload Left Palm Image</h3>
+                  </label>
 
-                    {LeftPalmImg && (
-                      <img
-                        src={LeftPalmImg}
-                        alt="Preview"
-                        className="preview-image"
-                      />
-                    )}
-                  </div>
-                  {/* <button class="upload-btn" id="uploadButton">
+                  {LeftPalmImg && (
+                    <img
+                      src={LeftPalmImg}
+                      alt="Preview"
+                      className="preview-image"
+                    />
+                  )}
+                </div>
+                {/* <button className="upload-btn" id="uploadButton">
                     Upload Image
                   </button> */}
-                </div>
               </div>
             </div>
+
+            <button className="schedule-btn">
+              Schedule your Meeting
+              <DoubleArrowIcon sx={{ marginLeft: "5px" }} />
+            </button>
           </form>
         </section>
       </Layout>

@@ -62,20 +62,22 @@ function Home() {
           <div className="services-card">
             {servicesData.map((val, i) => {
               return (
-                <div className="single-card">
-                  <div className="left">
-                    <h2>{val.name}</h2>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Earum illum aperiam fugiat.
-                    </p>
+                <>
+                  <div className="single-card">
+                    <div className="left">
+                      <h2>{val.name}</h2>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum illum aperiam fugiat.
+                      </p>
 
-                    <Link to={"astrological-session"}>Book now</Link>
+                      <Link to={"astrological-session"}>Book now</Link>
+                    </div>
+                    <div className="right">
+                      <img src={val.img} alt="" />
+                    </div>
                   </div>
-                  <div className="right">
-                    <img src={val.img} alt="" />
-                  </div>
-                </div>
+                </>
               );
             })}
           </div>

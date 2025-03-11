@@ -6,7 +6,7 @@
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
+  justify-content: center;
   align-items: center;
   //   background-color: $dark-theme-color;
   padding: 75px 0;
@@ -16,9 +16,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px;
+    margin: 5px;
+    background: rgba(84, 123, 123, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 2% 8% 2% 8%;
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid $bright-yellow;
 
     .single-input {
       margin: 25px 15px;
+      // flex: 1;
     }
 
     .form-row {
@@ -39,11 +47,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex: 1;
+        margin: 12px 15px;
       }
 
-      label {
+      .custom-img-upload-container {
         cursor: pointer;
         padding: 20px;
+        width: 280px;
       }
 
       .upload-text {
@@ -70,8 +81,8 @@
 
       .preview-image {
         margin-top: 20px;
-        max-width: 500px;
-        // max-height: 200px;
+        max-width: 280px;
+        max-height: 280px;
         // border-radius: 10px;
         border-top: 2px dashed $bright-yellow;
         // display: none;
@@ -127,6 +138,59 @@
 
         &:focus {
           border: 2px solid $bright-yellow;
+        }
+      }
+    }
+
+    .schedule-btn {
+      margin-top: 25px;
+      font-size: 16px;
+      // color: $text-color;
+      transition: 0.3s ease-in;
+      border: 2px solid $text-color;
+      background-color: $bright-yellow;
+      align-self: right;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $text-color;
+        // color: $bright-yellow;
+        border: 2px solid $bright-yellow;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .astrology-session {
+    form {
+      padding: 25px 0px;
+      margin: 0px;
+      border-radius: 5% 15% 5% 15%;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .astrology-session {
+    form {
+      margin: 0;
+
+      .single-input {
+        margin: 25px 0px;
+      }
+
+      .form-row {
+        input {
+          margin: 12px 0;
+        }
+
+        label {
+          margin: 8px 0px;
+          padding: 0;
         }
       }
     }
